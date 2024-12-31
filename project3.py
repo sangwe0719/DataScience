@@ -24,3 +24,7 @@ sales.drop('J')
 sales
 sales = sales.drop('J')
 sales
+sales2 = sales.copy()
+sales2
+sales2 + 500
+sales
