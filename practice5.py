@@ -67,3 +67,14 @@ ylabel='frequency',
 color='g')
                
 plt.show()
+
+dist.plot.box(title='Breaking distance')
+plt.show()
+
+df = pd.read_csv('C:/Users/마상위/Desktop/Data/iris.csv')
+
+df.boxplot(column='Petal_Length', 
+by='Species', 
+grid=False) 
+plt.suptitle('') 
+plt.show()
