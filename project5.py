@@ -21,3 +21,19 @@ usage_time.median()
 usage_time
 usage_time.plot.hist(bins = 6)
 plt.show()
+
+usage_time.plot.box(title = 'Usage Time')
+plt.show()
+operating_system = df['Operating_System']
+operating_system.value_counts()
+
+df.boxplot(column='App_Usage_Time',
+           by ='Operating_System',
+           grid= False)
+plt.suptitle('')
+plt.show()
+
+fig, axes = plt.subplots(nrows=1, ncols=2)
+df['App_Usage_Time'].plot.hist(ax=axes[0],bins = 6)
+df['App_Usage_Time'].plot.box(ax=axes[1])
+plt.show()
