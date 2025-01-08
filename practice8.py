@@ -1,3 +1,4 @@
+import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
@@ -11,3 +12,8 @@ y='passengers',
 hue='month'
 )
 plt.show()
+
+df = pd.read_csv('C:/Users/마상위/Desktop/Data/crimeRatesByState2005.csv')
+df.head()
+sns.set_theme(rc={'figure.figsize':(7,7)})
+
